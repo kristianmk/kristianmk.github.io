@@ -1,0 +1,169 @@
+{
+  "updated": "2026-08-27",
+  "sources": [
+    "ORCID 0000-0003-4088-1642",
+    "DBLP 239/4279"
+  ],
+  "items": [
+    {
+      "id": "doi:10.1016/j.cviu.2025.104575",
+      "title": "Evaluating the effect of image quantity on Gaussian Splatting: A statistical perspective",
+      "year": 2026,
+      "venue": "Computer Vision and Image Understanding",
+      "type": "journal article",
+      "doi": "10.1016/j.cviu.2025.104575",
+      "url": "https://doi.org/10.1016/j.cviu.2025.104575",
+      "source": "DBLP"
+    },
+    {
+      "id": "arxiv:2607.03209",
+      "title": "Fast 3D Foundation Model Initialized Gaussian Splatting",
+      "year": 2026,
+      "venue": "arXiv",
+      "type": "preprint",
+      "doi": "10.48550/arXiv.2607.03209",
+      "url": "https://doi.org/10.48550/arXiv.2607.03209",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1109/ICCMA67641.2025.11369605",
+      "title": "ScatteringSplatting: Capturing Minute Details Using Deep Learning-Aided Gaussian Splatting",
+      "year": 2025,
+      "venue": "ICCMA 2025",
+      "type": "conference paper",
+      "doi": "10.1109/ICCMA67641.2025.11369605",
+      "url": "https://doi.org/10.1109/ICCMA67641.2025.11369605",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1109/ACCESS.2024.3408318",
+      "title": "Gaussian Splatting: 3D Reconstruction and Novel View Synthesis: A Review",
+      "year": 2024,
+      "venue": "IEEE Access",
+      "type": "journal article",
+      "doi": "10.1109/ACCESS.2024.3408318",
+      "url": "https://doi.org/10.1109/ACCESS.2024.3408318",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-77918-3_2",
+      "title": "Optimizing Autonomous Vehicle Racing Using Reinforcement Learning with Pre-trained Embeddings for Dimensionality Reduction",
+      "year": 2024,
+      "venue": "SGAI 2024",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-031-77918-3_2",
+      "url": "https://doi.org/10.1007/978-3-031-77918-3_2",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.7557/18.6824",
+      "title": "A contrastive learning approach for individual re-identification in a wild fish population",
+      "year": 2023,
+      "venue": "NLDL 2023",
+      "type": "conference paper",
+      "doi": "10.7557/18.6824",
+      "url": "https://doi.org/10.7557/18.6824",
+      "source": "DBLP"
+    },
+    {
+      "id": "arxiv:2304.12778",
+      "title": "Loss and Reward Weighing for Increased Learning in Distributed Reinforcement Learning",
+      "year": 2023,
+      "venue": "arXiv",
+      "type": "preprint",
+      "doi": "10.48550/arXiv.2304.12778",
+      "url": "https://doi.org/10.48550/arXiv.2304.12778",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.3390/fishes7060345",
+      "title": "Accurate Wound and Lice Detection in Atlantic Salmon Fish Using a Convolutional Neural Network",
+      "year": 2022,
+      "venue": "Fishes",
+      "type": "journal article",
+      "doi": "10.3390/fishes7060345",
+      "url": "https://doi.org/10.3390/fishes7060345",
+      "source": "ORCID"
+    },
+    {
+      "id": "doi:10.1093/icesjms/fsab255",
+      "title": "Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook",
+      "year": 2022,
+      "venue": "ICES Journal of Marine Science",
+      "type": "journal article",
+      "doi": "10.1093/icesjms/fsab255",
+      "url": "https://doi.org/10.1093/icesjms/fsab255",
+      "source": "ORCID"
+    },
+    {
+      "id": "doi:10.1007/s10489-020-02154-9",
+      "title": "Temperate fish detection and classification: a deep learning based approach",
+      "year": 2022,
+      "venue": "Applied Intelligence",
+      "type": "journal article",
+      "doi": "10.1007/s10489-020-02154-9",
+      "url": "https://doi.org/10.1007/s10489-020-02154-9",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.3390/informatics9020033",
+      "title": "Development of a Simulator for Prototyping Reinforcement Learning-Based Autonomous Cars",
+      "year": 2022,
+      "venue": "Informatics",
+      "type": "journal article",
+      "doi": "10.3390/informatics9020033",
+      "url": "https://doi.org/10.3390/informatics9020033",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-08223-8_12",
+      "title": "An Accurate Convolutional Neural Networks Approach to Wound Detection for Farmed Salmon",
+      "year": 2022,
+      "venue": "EANN 2022",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-031-08223-8_12",
+      "url": "https://doi.org/10.1007/978-3-031-08223-8_12",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-08223-8_38",
+      "title": "Towards Using Reinforcement Learning for Autonomous Docking of Unmanned Surface Vehicles",
+      "year": 2022,
+      "venue": "EANN 2022",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-031-08223-8_38",
+      "url": "https://doi.org/10.1007/978-3-031-08223-8_38",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-10525-8_9",
+      "title": "Branch-Manoeuvring Capable Pipe Cleaning Robot for Aquaponic Systems",
+      "year": 2021,
+      "venue": "INTAP 2021",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-031-10525-8_9",
+      "url": "https://doi.org/10.1007/978-3-031-10525-8_9",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-10525-8_29",
+      "title": "An Evaluation of Autonomous Car Simulators and Their Applicability for Supervised and Reinforcement Learning",
+      "year": 2021,
+      "venue": "INTAP 2021",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-031-10525-8_29",
+      "url": "https://doi.org/10.1007/978-3-031-10525-8_29",
+      "source": "DBLP"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-22999-3_9",
+      "title": "Biometric Fish Classification of Temperate Species Using Convolutional Neural Network with Squeeze-and-Excitation",
+      "year": 2019,
+      "venue": "IEA/AIE 2019",
+      "type": "conference paper",
+      "doi": "10.1007/978-3-030-22999-3_9",
+      "url": "https://doi.org/10.1007/978-3-030-22999-3_9",
+      "source": "DBLP"
+    }
+  ]
+}

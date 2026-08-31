@@ -1,0 +1,46 @@
+{
+  "updated": "2026-08-27",
+  "source": "GitHub REST API",
+  "items": [
+    {
+      "name": "microgpt.cpp",
+      "url": "https://github.com/kristianmk/microgpt.cpp",
+      "description": "Small C++23 implementations of a tiny character-level GPT model.",
+      "language": "C++",
+      "stars": 4,
+      "forks": 0
+    },
+    {
+      "name": "ros2-examples-ads",
+      "url": "https://github.com/kristianmk/ros2-examples-ads",
+      "description": "ROS 2 examples for communicating with Beckhoff PLCs through ADS/AMS.",
+      "language": "C++",
+      "stars": 4,
+      "forks": 0
+    },
+    {
+      "name": "ctrl-c-gpt-v",
+      "url": "https://github.com/kristianmk/ctrl-c-gpt-v",
+      "description": "Clipboard spelling and grammar correction using GPT.",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0
+    },
+    {
+      "name": "party-hat-generator",
+      "url": "https://github.com/kristianmk/party-hat-generator",
+      "description": "Customizable CadQuery party hats ready for 3D printing.",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0
+    },
+    {
+      "name": "opencv-test-cmake",
+      "url": "https://github.com/kristianmk/opencv-test-cmake",
+      "description": "A modern CMake example for a focused OpenCV build.",
+      "language": "C++",
+      "stars": 1,
+      "forks": 0
+    }
+  ]
+}

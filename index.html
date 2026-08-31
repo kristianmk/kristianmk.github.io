@@ -1,74 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kristianmk</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        main {
-            padding: 20px;
-            color: #333;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            color: #007BFF;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f6f8">
+  <meta name="description" content="Research and software in engineering cybernetics, embedded systems and AI × robotics.">
+  <meta name="author" content="Kristian Muri Knausgård">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="kristian.mk">
+  <meta property="og:title" content="Engineering Cybernetics · Embedded Systems · AI × Robotics · kristian.mk">
+  <meta property="og:description" content="Research and software across physical systems, embedded computation, perception and control.">
+  <meta property="og:url" content="https://kristian.mk/">
+  <meta property="og:image" content="https://kristian.mk/assets/og-card.png">
+  <meta property="og:image:alt" content="kristian.mk: Engineering Cybernetics, Embedded Systems and AI × Robotics.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engineering Cybernetics · Embedded Systems · AI × Robotics · kristian.mk">
+  <meta name="twitter:description" content="Research and software across physical systems, embedded computation, perception and control.">
+  <meta name="twitter:image" content="https://kristian.mk/assets/og-card.png">
+  <link rel="canonical" href="https://kristian.mk/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kristian Muri Knausgård",
+    "url": "https://kristian.mk/",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Agder"
+    },
+    "sameAs": [
+      "https://github.com/kristianmk",
+      "https://orcid.org/0000-0003-4088-1642",
+      "https://dblp.org/pid/239/4279",
+      "https://www.uia.no/english/about-uia/employees/kristimk/"
+    ],
+    "knowsAbout": [
+      "Engineering cybernetics",
+      "Embedded systems",
+      "AI × Robotics",
+      "Computer vision",
+      "3D reconstruction"
+    ]
+  }
+  </script>
+  <title>Engineering cybernetics, embedded systems and AI × robotics · kristian.mk</title>
 </head>
 <body>
-    <header>
-        <h1>Testing</h1>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg aria-hidden="true" class="icon-sprite">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.7"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.7"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.75 5.57 6.15.9-4.45 4.33 1.05 6.12L12 17.03l-5.5 2.89 1.05-6.12L3.1 9.47l6.15-.9L12 3Z" fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-width="1.5"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 15.2A8.4 8.4 0 0 1 8.8 4 8.4 8.4 0 1 0 20 15.2Z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.7"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.7"/></symbol>
+  </svg>
 
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>Testing 123.</p>
-        </section>
-    </main>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a aria-label="kristian.mk, home" class="brand" href="#top"><span aria-hidden="true" class="brand-rule"></span><span>kristian.mk</span></a>
+      <nav aria-label="Primary navigation" class="site-nav"><a href="#code">Software</a><a href="#publications">Articles</a><a href="#profiles">Indexes</a></nav>
+      <button aria-label="Switch color theme" class="theme-toggle" title="Switch color theme" type="button">
+        <svg aria-hidden="true" class="theme-icon theme-icon-moon"><use href="#icon-moon"></use></svg>
+        <svg aria-hidden="true" class="theme-icon theme-icon-sun"><use href="#icon-sun"></use></svg>
+      </button>
+    </div>
+  </header>
 
-    <footer>
-        <p>Copyright &copy; 2023</p>
-    </footer>
+  <main id="main">
+    <section aria-labelledby="hero-title" class="hero shell" id="top">
+      <p class="hero-kicker"><span>Research + software</span></p>
+
+      <div class="hero-stage">
+        <h1 class="field-title" id="hero-title">
+          <span><b>01</b><em>Engineering Cybernetics</em></span>
+          <span><b>02</b><em>Embedded Systems</em></span>
+          <span><b>03</b><em>AI <strong>×</strong> Robotics</em></span>
+        </h1>
+
+        <figure aria-hidden="true" class="activity-art">
+          <div class="activity-art-visual">
+            <img alt="" class="activity-art-image activity-art-light" height="115" src="assets/activity-grid-light.svg" width="506">
+            <img alt="" class="activity-art-image activity-art-dark" height="115" src="assets/activity-grid-dark.svg" width="506">
+          </div>
+        </figure>
+      </div>
+
+      <div class="hero-footer">
+        <div aria-label="Research shortcuts" class="hero-links">
+          <a href="#code">Selected software<svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          <a href="#publications">Research articles<svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="code-title" class="section shell" id="code">
+      <div class="section-heading">
+        <div><p class="section-code">01 / SOFTWARE</p><h2 id="code-title">Selected software</h2></div>
+        <a class="section-link" href="https://github.com/kristianmk?tab=repositories">GitHub index<svg aria-hidden="true"><use href="#icon-external"></use></svg></a>
+      </div>
+      <div aria-live="polite" class="project-list" id="project-grid">
+<a class="project-row" data-project="microgpt.cpp" href="https://github.com/kristianmk/microgpt.cpp" aria-label="microgpt.cpp, open on GitHub">
+  <span class="project-index">01</span>
+  <div class="project-name"><h3>microgpt.cpp</h3></div>
+  <p class="project-description">Small C++23 implementations of a tiny character-level GPT model.</p>
+  <span class="project-language"><i aria-hidden="true" class="language-dot"></i>C++</span>
+  <span class="project-stars" aria-label="4 GitHub stars"><svg aria-hidden="true"><use href="#icon-star"></use></svg>4</span>
+  <svg aria-hidden="true" class="project-arrow"><use href="#icon-arrow"></use></svg>
+</a>
+<a class="project-row" data-project="ros2-examples-ads" href="https://github.com/kristianmk/ros2-examples-ads" aria-label="ros2-examples-ads, open on GitHub">
+  <span class="project-index">02</span>
+  <div class="project-name"><h3>ros2-examples-ads</h3></div>
+  <p class="project-description">ROS 2 examples for communicating with Beckhoff PLCs through ADS/AMS.</p>
+  <span class="project-language"><i aria-hidden="true" class="language-dot"></i>C++</span>
+  <span class="project-stars" aria-label="4 GitHub stars"><svg aria-hidden="true"><use href="#icon-star"></use></svg>4</span>
+  <svg aria-hidden="true" class="project-arrow"><use href="#icon-arrow"></use></svg>
+</a>
+<a class="project-row" data-project="ctrl-c-gpt-v" href="https://github.com/kristianmk/ctrl-c-gpt-v" aria-label="ctrl-c-gpt-v, open on GitHub">
+  <span class="project-index">03</span>
+  <div class="project-name"><h3>ctrl-c-gpt-v</h3></div>
+  <p class="project-description">Clipboard spelling and grammar correction using GPT.</p>
+  <span class="project-language"><i aria-hidden="true" class="language-dot"></i>Python</span>
+  <span class="project-stars" aria-label="2 GitHub stars"><svg aria-hidden="true"><use href="#icon-star"></use></svg>2</span>
+  <svg aria-hidden="true" class="project-arrow"><use href="#icon-arrow"></use></svg>
+</a>
+<a class="project-row" data-project="party-hat-generator" href="https://github.com/kristianmk/party-hat-generator" aria-label="party-hat-generator, open on GitHub">
+  <span class="project-index">04</span>
+  <div class="project-name"><h3>party-hat-generator</h3></div>
+  <p class="project-description">Customizable CadQuery party hats ready for 3D printing.</p>
+  <span class="project-language"><i aria-hidden="true" class="language-dot"></i>Python</span>
+  <span class="project-stars" aria-label="2 GitHub stars"><svg aria-hidden="true"><use href="#icon-star"></use></svg>2</span>
+  <svg aria-hidden="true" class="project-arrow"><use href="#icon-arrow"></use></svg>
+</a>
+<a class="project-row" data-project="opencv-test-cmake" href="https://github.com/kristianmk/opencv-test-cmake" aria-label="opencv-test-cmake, open on GitHub">
+  <span class="project-index">05</span>
+  <div class="project-name"><h3>opencv-test-cmake</h3></div>
+  <p class="project-description">A modern CMake example for a focused OpenCV build.</p>
+  <span class="project-language"><i aria-hidden="true" class="language-dot"></i>C++</span>
+  <span class="project-stars" aria-label="1 GitHub stars"><svg aria-hidden="true"><use href="#icon-star"></use></svg>1</span>
+  <svg aria-hidden="true" class="project-arrow"><use href="#icon-arrow"></use></svg>
+</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="publications-title" class="section publications-section shell" id="publications">
+      <div class="section-heading">
+        <div><p class="section-code">02 / PUBLICATIONS</p><h2 id="publications-title">Research articles <span class="count" id="publication-count">16</span></h2></div>
+        <div aria-label="Publication profile links" class="publication-sources"><a href="https://orcid.org/0000-0003-4088-1642">ORCID</a><a href="https://dblp.org/pid/239/4279">DBLP</a></div>
+      </div>
+      <div aria-live="polite" class="publication-list" id="publication-list">
+<a class="publication-item" href="https://doi.org/10.1016/j.cviu.2025.104575" aria-label="Evaluating the effect of image quantity on Gaussian Splatting: A statistical perspective, open publication">
+  <span class="publication-year">2026</span>
+  <span class="publication-main"><strong>Evaluating the effect of image quantity on Gaussian Splatting: A statistical perspective</strong><small>Computer Vision and Image Understanding · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item" href="https://doi.org/10.48550/arXiv.2607.03209" aria-label="Fast 3D Foundation Model Initialized Gaussian Splatting, open publication">
+  <span class="publication-year">2026</span>
+  <span class="publication-main"><strong>Fast 3D Foundation Model Initialized Gaussian Splatting</strong><small>arXiv · Preprint</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item" href="https://doi.org/10.1109/ICCMA67641.2025.11369605" aria-label="ScatteringSplatting: Capturing Minute Details Using Deep Learning-Aided Gaussian Splatting, open publication">
+  <span class="publication-year">2025</span>
+  <span class="publication-main"><strong>ScatteringSplatting: Capturing Minute Details Using Deep Learning-Aided Gaussian Splatting</strong><small>ICCMA 2025 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item" href="https://doi.org/10.1109/ACCESS.2024.3408318" aria-label="Gaussian Splatting: 3D Reconstruction and Novel View Synthesis: A Review, open publication">
+  <span class="publication-year">2024</span>
+  <span class="publication-main"><strong>Gaussian Splatting: 3D Reconstruction and Novel View Synthesis: A Review</strong><small>IEEE Access · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item" href="https://doi.org/10.1007/978-3-031-77918-3_2" aria-label="Optimizing Autonomous Vehicle Racing Using Reinforcement Learning with Pre-trained Embeddings for Dimensionality Reduction, open publication">
+  <span class="publication-year">2024</span>
+  <span class="publication-main"><strong>Optimizing Autonomous Vehicle Racing Using Reinforcement Learning with Pre-trained Embeddings for Dimensionality Reduction</strong><small>SGAI 2024 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item" href="https://doi.org/10.7557/18.6824" aria-label="A contrastive learning approach for individual re-identification in a wild fish population, open publication">
+  <span class="publication-year">2023</span>
+  <span class="publication-main"><strong>A contrastive learning approach for individual re-identification in a wild fish population</strong><small>NLDL 2023 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.48550/arXiv.2304.12778" aria-label="Loss and Reward Weighing for Increased Learning in Distributed Reinforcement Learning, open publication">
+  <span class="publication-year">2023</span>
+  <span class="publication-main"><strong>Loss and Reward Weighing for Increased Learning in Distributed Reinforcement Learning</strong><small>arXiv · Preprint</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.3390/fishes7060345" aria-label="Accurate Wound and Lice Detection in Atlantic Salmon Fish Using a Convolutional Neural Network, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>Accurate Wound and Lice Detection in Atlantic Salmon Fish Using a Convolutional Neural Network</strong><small>Fishes · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1093/icesjms/fsab255" aria-label="Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook</strong><small>ICES Journal of Marine Science · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/s10489-020-02154-9" aria-label="Temperate fish detection and classification: a deep learning based approach, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>Temperate fish detection and classification: a deep learning based approach</strong><small>Applied Intelligence · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.3390/informatics9020033" aria-label="Development of a Simulator for Prototyping Reinforcement Learning-Based Autonomous Cars, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>Development of a Simulator for Prototyping Reinforcement Learning-Based Autonomous Cars</strong><small>Informatics · Journal article</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/978-3-031-08223-8_12" aria-label="An Accurate Convolutional Neural Networks Approach to Wound Detection for Farmed Salmon, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>An Accurate Convolutional Neural Networks Approach to Wound Detection for Farmed Salmon</strong><small>EANN 2022 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/978-3-031-08223-8_38" aria-label="Towards Using Reinforcement Learning for Autonomous Docking of Unmanned Surface Vehicles, open publication">
+  <span class="publication-year">2022</span>
+  <span class="publication-main"><strong>Towards Using Reinforcement Learning for Autonomous Docking of Unmanned Surface Vehicles</strong><small>EANN 2022 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/978-3-031-10525-8_9" aria-label="Branch-Manoeuvring Capable Pipe Cleaning Robot for Aquaponic Systems, open publication">
+  <span class="publication-year">2021</span>
+  <span class="publication-main"><strong>Branch-Manoeuvring Capable Pipe Cleaning Robot for Aquaponic Systems</strong><small>INTAP 2021 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/978-3-031-10525-8_29" aria-label="An Evaluation of Autonomous Car Simulators and Their Applicability for Supervised and Reinforcement Learning, open publication">
+  <span class="publication-year">2021</span>
+  <span class="publication-main"><strong>An Evaluation of Autonomous Car Simulators and Their Applicability for Supervised and Reinforcement Learning</strong><small>INTAP 2021 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+<a class="publication-item is-extra" href="https://doi.org/10.1007/978-3-030-22999-3_9" aria-label="Biometric Fish Classification of Temperate Species Using Convolutional Neural Network with Squeeze-and-Excitation, open publication">
+  <span class="publication-year">2019</span>
+  <span class="publication-main"><strong>Biometric Fish Classification of Temperate Species Using Convolutional Neural Network with Squeeze-and-Excitation</strong><small>IEA/AIE 2019 · Conference paper</small></span>
+  <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+</a>
+      </div>
+      <button aria-expanded="false" class="show-all-button" id="show-all-publications" type="button"><span>Show all publications</span><svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+      <p class="data-note" id="data-note">Updated weekly from GitHub, ORCID and DBLP.</p>
+    </section>
+
+    <section aria-labelledby="profiles-title" class="records-section" id="profiles">
+      <div class="shell records-inner">
+        <div class="records-heading"><p class="section-code">03 / INDEXES</p><h2 id="profiles-title">Profiles and records</h2></div>
+        <nav aria-label="External profiles" class="record-links">
+          <a href="https://github.com/kristianmk" rel="me"><span>GitHub</span><small>Source code</small><svg aria-hidden="true"><use href="#icon-external"></use></svg></a>
+          <a href="https://orcid.org/0000-0003-4088-1642" rel="me"><span>ORCID</span><small>Researcher ID</small><svg aria-hidden="true"><use href="#icon-external"></use></svg></a>
+          <a href="https://dblp.org/pid/239/4279"><span>DBLP</span><small>Publication index</small><svg aria-hidden="true"><use href="#icon-external"></use></svg></a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="current-year">2026</span> kristian.mk</span><span class="footer-meta"><span>NORWAY</span></span></div></footer>
+  <noscript><div class="noscript-note">Live metadata refresh requires JavaScript. The complete static profile remains available.</div></noscript>
+  <script defer src="assets/site.js"></script>
 </body>
 </html>
