@@ -1,6 +1,6 @@
 # kristian.mk
 
-A compact, dependency-free research portfolio for engineering cybernetics, embedded systems and AI × robotics, focused on software and publications. The interface uses a cool, restrained industrial/editorial system with a typography-led discipline index and an original contribution-inspired grid. The grid is a local decorative SVG, not a contribution count, tracking widget or representation of live activity. It is designed for GitHub Pages and works directly from static files, with no build step, package manager, web font or client-side framework.
+A compact, dependency-free research portfolio focused on software and publications. The grid is a local decorative SVG, not a contribution count, tracking widget or representation of live activity. It is designed for GitHub Pages and works directly from static files, with no build step, package manager, web font or client-side framework.
 
 ## Local preview
 
