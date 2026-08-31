@@ -427,7 +427,7 @@ svg { display: block; }
   gap: 7px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .035em;
 }
@@ -492,7 +492,7 @@ svg { display: block; }
   margin-top: 6px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: .02em;
 }
@@ -537,7 +537,7 @@ svg { display: block; }
   margin: 21px 0 0;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.55;
 }
 
@@ -558,7 +558,7 @@ svg { display: block; }
 .records-heading h2 { max-width: 430px; font-size: clamp(39px, 4.8vw, 58px); }
 .record-links {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid rgba(155, 173, 170, .36);
   border-bottom: 1px solid rgba(155, 173, 170, .36);
 }
@@ -599,7 +599,7 @@ svg { display: block; }
   grid-column: 1;
   color: var(--panel-muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 620;
   letter-spacing: .04em;
   text-transform: uppercase;
@@ -626,7 +626,7 @@ svg { display: block; }
   justify-content: space-between;
   gap: 20px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 620;
   letter-spacing: .05em;
 }
@@ -680,7 +680,7 @@ svg { display: block; }
     padding-top: 42px;
     padding-bottom: 28px;
   }
-  .hero-kicker { margin-bottom: 19px; font-size: 8px; }
+  .hero-kicker { margin-bottom: 19px; font-size: 10px; }
   .hero-stage { gap: 25px; }
   .field-title > span {
     grid-template-columns: 28px minmax(0, 1fr);
@@ -731,10 +731,15 @@ svg { display: block; }
   }
   .publication-item:hover { padding-right: 2px; padding-left: 0; background: transparent; box-shadow: none; }
   .publication-main strong { font-size: 14px; }
-  .publication-main small { font-size: 8px; }
+  .publication-main small { font-size: 10px; }
   .publication-item > svg { width: 14px; height: 14px; }
   .records-inner { gap: 31px; padding-top: 56px; padding-bottom: 56px; }
-  .record-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .record-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .record-links a:nth-child(2) { border-right: 0; padding-right: 0; }
+  .record-links a:nth-child(3) { padding-left: 0; border-top: 1px solid rgba(155, 173, 170, .28); }
+  .record-links a:nth-child(4) { border-top: 1px solid rgba(155, 173, 170, .28); }
+  .record-links a:nth-child(2)::before { right: 0; }
+  .record-links a:nth-child(3)::before { left: 0; }
 }
 
 @media (max-width: 520px) {
