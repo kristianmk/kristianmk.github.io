@@ -22,6 +22,10 @@
   --header-height: 68px;
   --shell: 1180px;
   --ease: cubic-bezier(.2, .75, .2, 1);
+  --text-label: 14px;
+  --text-ui: 15px;
+  --text-supporting: 15px;
+  --text-body: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -146,11 +150,11 @@ svg { display: block; }
   display: inline-flex;
   align-items: center;
   gap: 11px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 780;
   letter-spacing: -.025em;
 }
-.brand-rule { width: 4px; height: 24px; background: var(--forest); }
+.brand-rule { width: 3px; height: 24px; background: var(--line-strong); }
 
 .site-nav {
   display: flex;
@@ -158,7 +162,7 @@ svg { display: block; }
   gap: 30px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -229,7 +233,7 @@ svg { display: block; }
   margin: 0 0 21px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-ui);
   font-weight: 700;
   letter-spacing: .09em;
   text-transform: uppercase;
@@ -260,9 +264,9 @@ svg { display: block; }
 .field-title b {
   color: var(--signal);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 760;
-  letter-spacing: .08em;
+  letter-spacing: .04em;
 }
 .field-title em {
   min-width: 0;
@@ -320,7 +324,7 @@ svg { display: block; }
   border-bottom: 1px solid var(--line-strong);
   color: var(--ink-soft);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-ui);
   font-weight: 700;
   letter-spacing: .04em;
   text-transform: uppercase;
@@ -350,7 +354,7 @@ svg { display: block; }
   margin: 0 0 11px;
   color: var(--forest);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-ui);
   font-weight: 730;
   letter-spacing: .09em;
 }
@@ -366,7 +370,7 @@ svg { display: block; }
   margin-left: 10px;
   color: var(--signal);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 760;
   letter-spacing: .06em;
   vertical-align: top;
@@ -398,7 +402,7 @@ svg { display: block; }
   grid-area: index;
   color: var(--signal);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 740;
   letter-spacing: .08em;
 }
@@ -417,8 +421,8 @@ svg { display: block; }
   max-width: 500px;
   margin: 0;
   color: var(--muted);
-  font-size: 12px;
-  line-height: 1.48;
+  font-size: var(--text-body);
+  line-height: 1.55;
 }
 .project-language,
 .project-stars {
@@ -427,7 +431,7 @@ svg { display: block; }
   gap: 7px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 700;
   letter-spacing: .035em;
 }
@@ -450,7 +454,7 @@ svg { display: block; }
   padding-bottom: 7px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 700;
   letter-spacing: .06em;
 }
@@ -475,7 +479,7 @@ svg { display: block; }
 .publication-year {
   color: var(--signal);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 720;
   letter-spacing: .05em;
 }
@@ -492,9 +496,10 @@ svg { display: block; }
   margin-top: 6px;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-supporting);
   font-weight: 600;
   letter-spacing: .02em;
+  line-height: 1.55;
 }
 .publication-item > svg {
   width: 16px;
@@ -523,7 +528,7 @@ svg { display: block; }
   color: var(--ink);
   cursor: pointer;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-ui);
   font-weight: 720;
   letter-spacing: .045em;
   text-transform: uppercase;
@@ -537,8 +542,8 @@ svg { display: block; }
   margin: 21px 0 0;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: var(--text-supporting);
+  line-height: 1.6;
 }
 
 .records-section {
@@ -599,7 +604,7 @@ svg { display: block; }
   grid-column: 1;
   color: var(--panel-muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 620;
   letter-spacing: .04em;
   text-transform: uppercase;
@@ -626,7 +631,7 @@ svg { display: block; }
   justify-content: space-between;
   gap: 20px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 620;
   letter-spacing: .05em;
 }
@@ -648,7 +653,8 @@ svg { display: block; }
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--text-supporting);
+  line-height: 1.55;
   text-align: center;
 }
 
@@ -680,10 +686,10 @@ svg { display: block; }
     padding-top: 42px;
     padding-bottom: 28px;
   }
-  .hero-kicker { margin-bottom: 19px; font-size: 12px; }
+  .hero-kicker { margin-bottom: 19px; font-size: var(--text-ui); }
   .hero-stage { gap: 25px; }
   .field-title > span {
-    grid-template-columns: 28px minmax(0, 1fr);
+    grid-template-columns: 36px minmax(0, 1fr);
     gap: 10px;
     padding-top: 7px;
     padding-bottom: 8px;
@@ -722,7 +728,7 @@ svg { display: block; }
   .project-row:hover { padding-right: 6px; padding-left: 10px; }
   .project-name h3,
   .project-row:first-child .project-name h3 { font-size: 24px; }
-  .project-description { max-width: 570px; font-size: 12px; }
+  .project-description { max-width: 570px; font-size: var(--text-body); line-height: 1.55; }
   .publication-item {
     grid-template-columns: 44px minmax(0, 1fr) 17px;
     gap: 11px;
@@ -730,8 +736,8 @@ svg { display: block; }
     padding: 15px 2px 15px 0;
   }
   .publication-item:hover { padding-right: 2px; padding-left: 0; background: transparent; box-shadow: none; }
-  .publication-main strong { font-size: 14px; }
-  .publication-main small { font-size: 12px; }
+  .publication-main strong { font-size: 16px; }
+  .publication-main small { font-size: var(--text-supporting); }
   .publication-item > svg { width: 14px; height: 14px; }
   .records-inner { gap: 31px; padding-top: 56px; padding-bottom: 56px; }
   .record-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -743,7 +749,7 @@ svg { display: block; }
 }
 
 @media (max-width: 520px) {
-  .brand { font-size: 13px; }
+  .brand { font-size: 15px; }
   .hero-kicker span:last-child { display: none; }
   .field-title em { font-size: clamp(39px, 12.6vw, 54px); }
   .section-heading { display: block; }
