@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27",
+  "updated": "2026-09-07",
   "source": "GitHub REST API",
   "items": [
     {
@@ -8,7 +8,8 @@
       "description": "Small C++23 implementations of a tiny character-level GPT model.",
       "language": "C++",
       "stars": 4,
-      "forks": 0
+      "forks": 1,
+      "updated_at": "2026-06-07T15:37:22Z"
     },
     {
       "name": "ros2-examples-ads",
@@ -16,7 +17,8 @@
       "description": "ROS 2 examples for communicating with Beckhoff PLCs through ADS/AMS.",
       "language": "C++",
       "stars": 4,
-      "forks": 0
+      "forks": 1,
+      "updated_at": "2024-04-23T09:17:44Z"
     },
     {
       "name": "ctrl-c-gpt-v",
@@ -24,7 +26,8 @@
       "description": "Clipboard spelling and grammar correction using GPT.",
       "language": "Python",
       "stars": 2,
-      "forks": 0
+      "forks": 0,
+      "updated_at": "2023-11-22T13:17:36Z"
     },
     {
       "name": "party-hat-generator",
@@ -32,7 +35,8 @@
       "description": "Customizable CadQuery party hats ready for 3D printing.",
       "language": "Python",
       "stars": 2,
-      "forks": 0
+      "forks": 1,
+      "updated_at": "2026-03-22T20:43:07Z"
     },
     {
       "name": "opencv-test-cmake",
@@ -40,7 +44,8 @@
       "description": "A modern CMake example for a focused OpenCV build.",
       "language": "C++",
       "stars": 1,
-      "forks": 0
+      "forks": 0,
+      "updated_at": "2024-09-01T08:00:28Z"
     }
   ]
 }
