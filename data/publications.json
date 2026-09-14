@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "sources": [
     "ORCID 0000-0003-4088-1642",
     "DBLP 239/4279"
@@ -43,7 +43,7 @@
       "type": "journal article",
       "doi": "10.1109/access.2024.3408318",
       "url": "https://doi.org/10.1109/access.2024.3408318",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.1007/978-3-031-77918-3_2",
@@ -53,7 +53,7 @@
       "type": "conference paper",
       "doi": "10.1007/978-3-031-77918-3_2",
       "url": "https://doi.org/10.1007/978-3-031-77918-3_2",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.7557/18.6824",
@@ -93,7 +93,7 @@
       "type": "journal article",
       "doi": "10.3390/informatics9020033",
       "url": "https://doi.org/10.3390/informatics9020033",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.1007/s10489-020-02154-9",
@@ -103,7 +103,7 @@
       "type": "journal article",
       "doi": "10.1007/s10489-020-02154-9",
       "url": "https://doi.org/10.1007/s10489-020-02154-9",
-      "source": "DBLP+ORCID+ORCID"
+      "source": "DBLP+ORCID+ORCID+ORCID+ORCID"
     },
     {
       "id": "doi:10.1093/icesjms/fsab255",
@@ -123,7 +123,7 @@
       "type": "conference paper",
       "doi": "10.1007/978-3-031-08223-8_12",
       "url": "https://doi.org/10.1007/978-3-031-08223-8_12",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.1007/978-3-031-08223-8_38",
@@ -133,7 +133,7 @@
       "type": "conference paper",
       "doi": "10.1007/978-3-031-08223-8_38",
       "url": "https://doi.org/10.1007/978-3-031-08223-8_38",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.1007/978-3-031-10525-8_29",
@@ -153,7 +153,7 @@
       "type": "conference paper",
       "doi": "10.1007/978-3-031-10525-8_9",
       "url": "https://doi.org/10.1007/978-3-031-10525-8_9",
-      "source": "DBLP+ORCID"
+      "source": "DBLP+ORCID+ORCID"
     },
     {
       "id": "doi:10.1007/978-3-030-22999-3_9",
@@ -163,7 +163,7 @@
       "type": "conference paper",
       "doi": "10.1007/978-3-030-22999-3_9",
       "url": "https://doi.org/10.1007/978-3-030-22999-3_9",
-      "source": "DBLP+ORCID+ORCID"
+      "source": "DBLP+ORCID+ORCID+ORCID+ORCID"
     }
   ]
 }
