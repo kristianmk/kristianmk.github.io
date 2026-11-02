@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "source": "GitHub REST API",
   "items": [
     {
@@ -7,9 +7,9 @@
       "url": "https://github.com/kristianmk/microgpt.cpp",
       "description": "Small C++23 implementations of a tiny character-level GPT model.",
       "language": "C++",
-      "stars": 5,
+      "stars": 4,
       "forks": 1,
-      "updated_at": "2026-10-23T10:17:38Z"
+      "updated_at": "2026-11-01T23:41:24Z"
     },
     {
       "name": "ros2-examples-ads",
